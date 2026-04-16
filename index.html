@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
     content="GameWorld is a standardized, state-verifiable benchmark for multimodal game agents in browser environments, covering 34 games, 170 tasks, and two agent interfaces." />
@@ -20,7 +21,7 @@
   <link rel="preload" href="./static/fonts/ProductSans-Regular.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="./static/fonts/ProductSans-Medium.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="./static/fonts/ProductSans-Bold.ttf" as="font" type="font/ttf" crossorigin />
-  <link rel="stylesheet" href="./static/css/index.css?v=20260415a" />
+  <link rel="stylesheet" href="./static/css/index.css?v=20260416a" />
 </head>
 
 <body>
@@ -50,7 +51,9 @@
           title="Technical Report" target="_blank" rel="noreferrer"><img class="header-pill-icon"
           src="./static/figures/arxiv-logo.svg" alt="arXiv logo" /></a><a class="header-pill is-icon"
           href="https://github.com/gameworld-project/gameworld" aria-label="GitHub" title="GitHub" target="_blank"
-          rel="noreferrer"><img class="header-pill-icon" src="./static/figures/github-svg.svg" alt="GitHub logo" /></a>
+          rel="noreferrer"><img class="header-pill-icon" src="./static/figures/github-svg.svg" alt="GitHub logo" /></a><a
+          class="header-pill is-live" href="https://www.youtube.com/@gameworld-bench/live" aria-label="YouTube Livestream"
+          title="YouTube Livestream" target="_blank" rel="noreferrer"><span class="live-dot" aria-hidden="true"></span><span class="live-label">LIVE</span></a>
       </div>
     </div>
   </header>
@@ -115,9 +118,9 @@
               <a class="cta-button" href="https://arxiv.org/abs/2604.07429" target="_blank"
                 rel="noreferrer"><span>Paper</span><small>ArXiv</small></a><a class="cta-button"
                 href="https://github.com/gameworld-project/gameworld" target="_blank"
-                rel="noreferrer"><span>GitHub</span><small>Repository</small></a><a class="cta-button"
+                rel="noreferrer"><span>GitHub</span><small>Repository</small></a>              <a class="cta-button is-live-cta"
                 href="https://www.youtube.com/@gameworld-bench/live" target="_blank"
-                rel="noreferrer"><span>Livestream</span><small>YouTube Live</small></a>
+                rel="noreferrer"><span class="live-dot" aria-hidden="true"></span><span>Livestream</span><small>YouTube Live</small></a>
             </div>
           </div>
 
@@ -1427,7 +1430,7 @@
 
   <noscript>This page works without JavaScript, but interactive controls such as
     filters, carousel navigation, and copy actions require it.</noscript>
-  <script src="./static/js/index.js?v=20260415a"></script>
+  <script src="./static/js/index.js?v=20260416a"></script>
 </body>
 
 </html>
