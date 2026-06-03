@@ -365,9 +365,6 @@ button {
 }
 
 .cta-button.is-live-cta {
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
   background: linear-gradient(135deg, #d42020 0%, #ff4444 100%);
   box-shadow: 0 16px 32px rgba(212, 32, 32, 0.22);
 }
@@ -1465,10 +1462,34 @@ button {
 }
 
 .release-cta {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
+  max-width: 408px;
   margin-top: 22px;
+}
+
+.release-cta .cta-button {
+  width: 100%;
+  min-width: 0;
+  min-height: 76px;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.release-cta .cta-button span {
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.release-cta .cta-button small {
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.1;
 }
 
 .release-side {
@@ -1623,7 +1644,7 @@ button {
 
 .citation-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(216px, 0.58fr);
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 1fr) minmax(188px, 196px);
   gap: 22px;
 }
 
@@ -1978,11 +1999,15 @@ button {
   }
 
   .release-cta .cta-button span {
-    font-size: 0.95rem;
+    font-size: 1.08rem;
+    font-weight: 800;
+    line-height: 1;
   }
 
   .release-cta .cta-button small {
-    font-size: 0.64rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.1;
   }
 
   .gallery-toolbar {
@@ -2329,6 +2354,6 @@ button {
   }
 
   .release-cta .cta-button span {
-    font-size: 0.88rem;
+    font-size: 0.98rem;
   }
 }
